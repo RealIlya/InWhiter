@@ -1,0 +1,1 @@
+<resources><color name="launcher_background">#FFFFFF</color><color name="colorPrimaryDark">#FFFFFF</color><!-- Верх (toolbar) --><color name="colorPrimary">#000000</color><!-- Низ (actionbar) --><color name="colorAccent">#FF4081</color><color name="textColorPrimary">#717171</color></resources>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="InWhiter.Resources.ShellStyle">
+
+    <Style x:Key="ShellStyle" TargetType="Shell">
+        <Setter Property="BackgroundColor" Value="Coral" />
+        <Setter Property="TabBarBackgroundColor" Value="WhiteSmoke" />
+
+        <Setter Property="FlyoutBackdrop">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="1,0"
+                                     EndPoint="1,1">
+                    <GradientStop Color="Coral"
+                                  Offset="0.3" />
+                    <GradientStop Color="WhiteSmoke"
+                                  Offset="0.6" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

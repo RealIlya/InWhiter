@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\bin\Debug\netstandard2.0\InWhiter.deps.json
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\bin\Debug\netstandard2.0\InWhiter.dll
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\bin\Debug\netstandard2.0\InWhiter.pdb
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.dll
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.pdb
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\HomePage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\ProfilePage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Resources\TabbedPageStyle.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Resources\LightTheme.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\MessagesPage.xaml.g.cs

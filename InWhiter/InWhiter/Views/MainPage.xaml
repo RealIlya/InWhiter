@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" -->
+<!--             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" -->
+<!--             xmlns:local="clr-namespace:InWhiter" -->
+<!--             xmlns:tabs="clr-namespace:InWhiter.Views.Tabs;assembly=InWhiter" -->
+<!--             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" -->
+<!--             android:TabbedPage.ToolbarPlacement="Bottom" -->
+<!--             android:TabbedPage.IsSwipePagingEnabled="False" -->
+<!--             x:Class="InWhiter.Views.MainPage"> -->
+<!--     <TabbedPage.Children> -->
+<!--         <tabs:HomePage /> -->
+<!--         <tabs:MessagesPage /> -->
+<!--         <tabs:ProfilePage /> -->
+<!--     </TabbedPage.Children> -->
+<!-- -->
+<!-- </TabbedPage> -->
+
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:InWhiter"
+    xmlns:tabs="clr-namespace:InWhiter.Views.Tabs;assembly=InWhiter"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="InWhiter.Views.MainPage"
+    TabBarBackgroundColor="WhiteSmoke"
+    TabBarForegroundColor="Chartreuse"
+    BackgroundColor="Coral"
+    UnselectedColor="Bisque"
+    TabBarDisabledColor="Gold"
+    TabBarUnselectedColor="Chocolate"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    FlyoutVerticalScrollMode="Auto"
+    NavBarHasShadow="True">
+
+    <Shell.FlyoutHeader>
+        <Frame>
+            <Label Text="Здарова!" />
+        </Frame>
+    </Shell.FlyoutHeader>
+
+    
+
+    <FlyoutItem Title="Европа">
+
+        <ShellContent Title="Messages" FlyoutIcon="outline_chat_black_24dp.png" FlyoutItemIsVisible="False">
+            <tabs:MessagesPage />
+        </ShellContent>
+        <ShellContent Title="Home">
+            <tabs:HomePage />
+        </ShellContent>
+    </FlyoutItem>
+
+</Shell>
