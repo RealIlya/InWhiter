@@ -14,7 +14,7 @@ namespace InWhiter.Views.Tabs {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Tabs\\MessagesPage.xaml")]
-    public partial class MessagesPage : global::Xamarin.Forms.Page {
+    public partial class MessagesPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

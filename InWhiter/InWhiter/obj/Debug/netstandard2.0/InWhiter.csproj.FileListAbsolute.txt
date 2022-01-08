@@ -10,8 +10,9 @@ C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhi
 C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.dll
 C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\InWhiter.pdb
 C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\HomePage.xaml.g.cs
-C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\ProfilePage.xaml.g.cs
-C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Resources\TabbedPageStyle.xaml.g.cs
 C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Resources\LightTheme.xaml.g.cs
 C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\MessagesPage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Resources\ShellStyle.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Resources\FlyoutItemLayoutStyle.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\GroupsPage.xaml.g.cs
+C:\Users\Admin\Desktop\DON'T DELETE\inventions\C sharp\MobileApps\InWhiter\InWhiter\InWhiter\obj\Debug\netstandard2.0\Views\Tabs\SettingsPage.xaml.g.cs

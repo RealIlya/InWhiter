@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="clr-namespace:InWhiter.Utilities;assembly=InWhiter"
+             x:Class="InWhiter.Views.Tabs.SettingsPage"
+             Title="{Binding Title}">
+
+    <ContentPage.Content>
+        <!-- <StackLayout> -->
+        <!--     <Label Text="{Binding Title}" -->
+        <!--            VerticalOptions="CenterAndExpand" -->
+        <!--            HorizontalOptions="CenterAndExpand" /> -->
+        <!-- </StackLayout> -->
+
+        <Grid Padding="4">
+            <tool:MyTableView
+                Intent="Settings"
+                HasUnevenRows="True"
+                SeparatorColor="Coral"
+                SeparatorHeight="2"
+                GroupHeaderColor="Coral"
+                GroupHeaderSeparatorColor="Transparent">
+                <TableRoot>
+                    <TableSection Title="Account">
+                        <TextCell Text="Nickname"
+                                  TextColor="Black"
+                                  Height="50"
+                                  Detail="Your nickname"
+                                  DetailColor="{StaticResource TertiaryTextColor}" />
+                        <TextCell Text="Number"
+                                  TextColor="Black"
+                                  Detail="Your telephone number"
+                                  DetailColor="{StaticResource TertiaryTextColor}" />
+                        <TextCell Text="About me"
+                                  TextColor="Black"
+                                  Detail="Information about you"
+                                  DetailColor="{StaticResource TertiaryTextColor}" />
+                    </TableSection>
+                    <TableSection Title="Settings">
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid Margin="6">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0">
+                                        <Image Scale="0.9"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"
+                                               Source="chat48x48.png" />
+                                    </Grid>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="Name"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalTextAlignment="Center" />
+                                        <Label Text="Description"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalTextAlignment="Center" />
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                        <!-- <ImageCell ImageSource="chat24x24.png" Text="Aboba" /> -->
+                        <tool:CustomingSwitchCell 
+                            Height="50"
+                            Text="Отправка по кнопке Ввод" 
+                            TextColor="Black"
+                            ThumbOnColor="Coral" 
+                            TrackOnColor="#FF9669" 
+                            ThumbOffColor="Gray"
+                            TrackOffColor="LightGray"
+                            SwitchOrientation="Left"
+                            />
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid Margin="6">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0">
+                                        <tool:CustomSwitch 
+                                            ThumbOnColor="Coral" 
+                                            TrackOnColor="LightCoral" 
+                                            ThumbOffColor="Gray"
+                                            TrackOffColor="LightGray"
+                                            IsToggled="True"/>
+                                    </Grid>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="Name"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalTextAlignment="Center" />
+                                        <Label Text="Description"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalTextAlignment="Center" />
+                                        <StackLayout.GestureRecognizers>
+                                            <ClickGestureRecognizer />
+                                        </StackLayout.GestureRecognizers>
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </tool:MyTableView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

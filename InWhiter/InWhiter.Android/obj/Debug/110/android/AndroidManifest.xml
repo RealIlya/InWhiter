@@ -8,8 +8,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.InWhiter" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:label="InWhiter.Android">
-    <activity android:name="crc64ce23cfcb00cd8968.MainActivity" android:configChanges="orientation|screenSize" android:label="InWhiter" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/background" android:label="InWhiter">
+    <activity android:name="crc648003298c2e41e46f.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:label="InWhiter" android:theme="@style/MainTheme" />
+    <activity android:name="crc648003298c2e41e46f.SplashActivity" android:icon="@drawable/background" android:label="InWhiter" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -13,14 +13,14 @@
         <!-- colorPrimary is used for the default action bar background -->
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <!-- colorPrimaryDark is used for the status bar -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
         <!-- <item name="android:textColorPrimary">@color/textColorPrimary</item> -->
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
         <!-- colorAccent is used as the default value for colorControlActivated
              which is used to tint widgets -->
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
         <!-- You can also set colorControlNormal, colorControlActivated
              colorControlHighlight and colorSwitchThumbNormal. -->
         <item name="android:windowActionModeOverlay">true</item>
@@ -28,7 +28,15 @@
         <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
     </style>
 
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:navigationBarColor">#ff9900</item>
+
+    </style>
+
     <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">#FF4081</item>
+        <item name="android:colorAccent">#FF4081</item>
     </style>
 </resources>

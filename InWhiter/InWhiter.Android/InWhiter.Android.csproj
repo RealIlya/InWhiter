@@ -44,12 +44,18 @@
         <Reference Include="System.Core" />
         <Reference Include="System.Xml.Linq" />
         <Reference Include="System.Xml" />
+        <Reference Include="Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\..\..\..\.nuget\packages\xamarin.forms\5.0.0.2012\lib\MonoAndroid10.0\Xamarin.Forms.Platform.Android.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="MainActivity.cs" />
+        <Compile Include="Activities\MainActivity.cs" />
+        <Compile Include="Activities\SplashActivity.cs" />
+        <Compile Include="MyTableViewRenderer.cs" />
+        <Compile Include="MySwitchRenderer.cs" />
         <Compile Include="Resources\Resource.Designer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
@@ -59,13 +65,17 @@
         <None Include="Properties\AndroidManifest.xml" />
     </ItemGroup>
     <ItemGroup>
-        <EmbeddedResource Include="Resources\drawable\outline_chat_black_24dp.png">
-          <SubType>Designer</SubType>
-        </EmbeddedResource>
+        <AndroidResource Include="Resources\drawable\background.png" />
+        <AndroidResource Include="Resources\drawable\chat12x12.png" />
+        <AndroidResource Include="Resources\drawable\chat24x24.png" />
+        <AndroidResource Include="Resources\drawable\chat48x48.png" />
+        <AndroidResource Include="Resources\drawable\fakeUser.png" />
+        <AndroidResource Include="Resources\drawable\fakeUser1.jpg" />
+        <AndroidResource Include="Resources\drawable\groups48x48.png" />
         <AndroidResource Include="Resources\layout\Tabbar.axml" />
         <AndroidResource Include="Resources\layout\Toolbar.axml" />
-        <AndroidResource Include="Resources\values\styles.xml" />
         <AndroidResource Include="Resources\values\colors.xml" />
+        <AndroidResource Include="Resources\values\styles.xml" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\InWhiter\InWhiter.csproj">

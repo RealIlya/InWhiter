@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 namespace InWhiter.Views.Tabs
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MessagesPage : Page
+    public partial class MessagesPage : ContentPage
     {
         public MessagesPage()
         {

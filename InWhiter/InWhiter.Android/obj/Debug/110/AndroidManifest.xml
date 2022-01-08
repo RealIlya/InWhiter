@@ -8,8 +8,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.InWhiter">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:label="InWhiter.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:configChanges="orientation|screenSize" android:label="InWhiter" android:theme="@style/MainTheme" android:name="crc64ce23cfcb00cd8968.MainActivity">
+  <application android:label="InWhiter" android:icon="@drawable/background" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:label="InWhiter" android:theme="@style/MainTheme" android:name="crc648003298c2e41e46f.MainActivity" />
+    <activity android:icon="@drawable/background" android:label="InWhiter" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="crc648003298c2e41e46f.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

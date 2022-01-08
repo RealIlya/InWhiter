@@ -8,17 +8,5 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InWhiter.Resources.LightTheme.xaml", "Resources/LightTheme.xaml", typeof(global::InWhiter.Resources.LightTheme))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InWhiter.Resources.LightTheme.xaml", "Resources/LightTheme.xaml", null)]
 
-namespace InWhiter.Resources {
-    
-    
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Resources\\LightTheme.xaml")]
-    public partial class LightTheme : global::Xamarin.Forms.ResourceDictionary {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LightTheme));
-        }
-    }
-}
