@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using InWhiter.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace InWhiter.Views.Tabs
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : Page
+    public partial class SettingsPage : ContentPage
     {
-        public HomePage()
+        public SettingsPage()
         {
             InitializeComponent();
+
+            BindingContext = new SettingsViewModel();
         }
     }
 }

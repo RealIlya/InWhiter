@@ -10,11 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace InWhiter.Views.Tabs
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProfilePage : Page
+    public partial class GroupsPage : ContentPage
     {
-        public ProfilePage()
+        public GroupsPage()
         {
             InitializeComponent();
+            
         }
     }
 }
