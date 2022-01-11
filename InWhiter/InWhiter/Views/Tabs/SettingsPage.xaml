@@ -1,116 +1,157 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:dk="http://xamarin.com/schemas/"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:InWhiter.Views.Tabs;assembly=InWhiter"
+             xmlns:viewModels="clr-namespace:InWhiter.ViewModels;assembly=InWhiter"
              xmlns:tool="clr-namespace:InWhiter.Utilities;assembly=InWhiter"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="InWhiter.Views.Tabs.SettingsPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             Shell.FlyoutBackgroundImage="fakeUser1.jpg">
+
+    <ContentPage.BindingContext>
+        <viewModels:SettingsViewModel />
+    </ContentPage.BindingContext>
+    <!--
+    <Shell.TitleView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Image Source="fakeUser1.jpg" Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <ClickGestureRecognizer />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </Grid>
+    </Shell.TitleView>
+    -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Aboba" Order="Primary" />
+    </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <!-- <StackLayout> -->
-        <!--     <Label Text="{Binding Title}" -->
-        <!--            VerticalOptions="CenterAndExpand" -->
-        <!--            HorizontalOptions="CenterAndExpand" /> -->
-        <!-- </StackLayout> -->
 
-        <Grid Padding="4">
-            <tool:MyTableView
-                Intent="Settings"
-                HasUnevenRows="True"
-                SeparatorColor="Coral"
-                SeparatorHeight="2"
-                GroupHeaderColor="Coral"
-                GroupHeaderSeparatorColor="Transparent">
-                <TableRoot>
-                    <TableSection Title="Account">
-                        <TextCell Text="Nickname"
-                                  TextColor="Black"
-                                  Height="50"
-                                  Detail="Your nickname"
-                                  DetailColor="{StaticResource TertiaryTextColor}" />
-                        <TextCell Text="Number"
-                                  TextColor="Black"
-                                  Detail="Your telephone number"
-                                  DetailColor="{StaticResource TertiaryTextColor}" />
-                        <TextCell Text="About me"
-                                  TextColor="Black"
-                                  Detail="Information about you"
-                                  DetailColor="{StaticResource TertiaryTextColor}" />
-                    </TableSection>
-                    <TableSection Title="Settings">
-                        <ViewCell>
-                            <ViewCell.View>
-                                <Grid Margin="6">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
+        <AbsoluteLayout>
+            <Grid Padding="4" RowSpacing="0">
 
-                                    <Grid Grid.Column="0">
-                                        <Image Scale="0.9"
-                                               HorizontalOptions="Center"
-                                               VerticalOptions="Center"
-                                               Source="chat48x48.png" />
+                <tool:MyTableView Grid.Row="0"
+                                  Intent="Settings"
+                                  HasUnevenRows="True"
+                                  SeparatorColor="Coral"
+                                  SeparatorHeight="1"
+                                  GroupHeaderColor="Coral"
+                                  GroupHeaderSeparatorColor="Transparent"
+                                  IsEnabled="{Binding  SettingsViewIsEnabled}">
+                    <TableRoot>
+                        <TableSection Title="Account">
+                            <TextCell Text="Nickname"
+                                      TextColor="Black"
+                                      Height="50"
+                                      Detail="Your nickname"
+                                      DetailColor="{StaticResource TertiaryTextColor}" />
+                            <TextCell Text="Number"
+                                      TextColor="Black"
+                                      Detail="Your telephone number"
+                                      DetailColor="{StaticResource TertiaryTextColor}" />
+                            <TextCell Text="About me"
+                                      TextColor="Black"
+                                      Detail="Information about you"
+                                      DetailColor="{StaticResource TertiaryTextColor}" />
+                        </TableSection>
+                        <TableSection Title="Settings">
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid Margin="6">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid Grid.Column="0">
+                                            <Image Scale="0.9"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center"
+                                                   Source="chat48x48.png" />
+                                        </Grid>
+
+                                        <StackLayout Grid.Column="1">
+                                            <Label Text="Name"
+                                                   TextColor="Black"
+                                                   HorizontalTextAlignment="Start"
+                                                   VerticalTextAlignment="Center" />
+                                            <Label Text="Description"
+                                                   HorizontalTextAlignment="Start"
+                                                   VerticalTextAlignment="Center" />
+                                        </StackLayout>
                                     </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                            <!-- <ImageCell ImageSource="chat24x24.png" Text="Aboba" /> -->
+                            <tool:CustomingSwitchCell Height="50"
+                                                      Text="Отправка по кнопке Ввод"
+                                                      TextColor="Black"
+                                                      Detail="Настройка"
+                                                      DetailColor="Gray"
+                                                      ThumbOnColor="Coral"
+                                                      TrackOnColor="#FF9669"
+                                                      ThumbOffColor="Gray"
+                                                      TrackOffColor="LightGray"
+                                                      SwitchOrientation="Right" />
+                        </TableSection>
+                    </TableRoot>
+                </tool:MyTableView>
+            </Grid>
 
-                                    <StackLayout Grid.Column="1">
-                                        <Label Text="Name"
-                                               TextColor="Black"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalTextAlignment="Center" />
-                                        <Label Text="Description"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalTextAlignment="Center" />
-                                    </StackLayout>
-                                </Grid>
-                            </ViewCell.View>
-                        </ViewCell>
-                        <!-- <ImageCell ImageSource="chat24x24.png" Text="Aboba" /> -->
-                        <tool:CustomingSwitchCell 
-                            Height="50"
-                            Text="Отправка по кнопке Ввод" 
-                            TextColor="Black"
-                            ThumbOnColor="Coral" 
-                            TrackOnColor="#FF9669" 
-                            ThumbOffColor="Gray"
-                            TrackOffColor="LightGray"
-                            SwitchOrientation="Left"
-                            />
-                        <ViewCell>
-                            <ViewCell.View>
-                                <Grid Margin="6">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
+            <yummy:PancakeView x:Name="Frame"
+                               BackgroundColor="White"
+                               HeightRequest="50"
+                               Padding="20, 30"
+                               Margin="0"
+                               CornerRadius="30, 30, 0, 0"
+                               IsVisible="{Binding ChangePhotoProfileSelectorIsVisible}"
+                               AbsoluteLayout.LayoutBounds="1,1, AutoSize, AutoSize"
+                               AbsoluteLayout.LayoutFlags="PositionProportional">
+                <yummy:PancakeView.Shadow>
+                    <yummy:DropShadow Color="Black" BlurRadius="10" Offset="0, -20"  />
+                </yummy:PancakeView.Shadow>
+                <StackLayout VerticalOptions="Start"
+                             Spacing="10">
+                    <BoxView BackgroundColor="DarkGray"
+                             HeightRequest="3"
+                             HorizontalOptions="Center"
+                             WidthRequest="80" />
+                    <Grid RowDefinitions="Auto, *">
+                        <Label Text="Select your new favourite photo" />
 
-                                    <Grid Grid.Column="0">
-                                        <tool:CustomSwitch 
-                                            ThumbOnColor="Coral" 
-                                            TrackOnColor="LightCoral" 
-                                            ThumbOffColor="Gray"
-                                            TrackOffColor="LightGray"
-                                            IsToggled="True"/>
-                                    </Grid>
+                    </Grid>
+                </StackLayout>
 
-                                    <StackLayout Grid.Column="1">
-                                        <Label Text="Name"
-                                               TextColor="Black"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalTextAlignment="Center" />
-                                        <Label Text="Description"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalTextAlignment="Center" />
-                                        <StackLayout.GestureRecognizers>
-                                            <ClickGestureRecognizer />
-                                        </StackLayout.GestureRecognizers>
-                                    </StackLayout>
-                                </Grid>
-                            </ViewCell.View>
-                        </ViewCell>
-                    </TableSection>
-                </TableRoot>
-            </tool:MyTableView>
-        </Grid>
+                <!-- <yummy:PancakeView.GestureRecognizers> -->
+                <!--     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="PanGestureRecognizer_OnPanUpdated" /> -->
+                <!-- </yummy:PancakeView.GestureRecognizers> -->
+            </yummy:PancakeView>
+
+            <Button WidthRequest="66"
+                    HeightRequest="66"
+                    CornerRadius="50"
+                    BackgroundColor="{StaticResource PrimaryColor}"
+                    ImageSource="outline_add_photo_alternate_white_48.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    IsVisible="{Binding ChangePhotoProfileButtonIsVisible}"
+                    xct:ShadowEffect.Color="{StaticResource PrimaryColor}"
+                    xct:ShadowEffect.Radius="3"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".95,.95,80,80"
+                    Command="{Binding ChangePhotoProfileCommand }" />
+
+        </AbsoluteLayout>
+
     </ContentPage.Content>
 </ContentPage>

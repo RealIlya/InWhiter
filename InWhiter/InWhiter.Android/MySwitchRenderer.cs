@@ -1,8 +1,10 @@
 ﻿using System;
 using Android.Graphics;
 using Android.Graphics.Drawables;
+using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.Widget;
+using Google.Android.Material.Snackbar;
 using InWhiter.Android;
 using InWhiter.Utilities;
 using Xamarin.Forms;

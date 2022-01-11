@@ -27,6 +27,10 @@ namespace InWhiter.Android.Activities
             LoadApplication(new App());
 
             Window window = Window;
+            // if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
+            // {
+            //     
+            // }
             // window.SetNavigationBarColor(Color.WhiteSmoke.ToAndroid());
             // window.SetStatusBarColor(Color.FromRgb(243, 122, 84).ToAndroid());
             // window.NavigationBarDividerColor = 3;

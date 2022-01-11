@@ -49,7 +49,11 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="DK.SlidingPanel" Version="2.2.9" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+        <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.763-beta" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Activities\MainActivity.cs" />
@@ -65,13 +69,66 @@
         <None Include="Properties\AndroidManifest.xml" />
     </ItemGroup>
     <ItemGroup>
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_black_18.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_black_20.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_black_24.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_black_36.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_black_48.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_white_18.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_white_20.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_white_24.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_white_36.png" />
+        <AndroidResource Include="Resources\drawable-hdpi\outline_add_photo_alternate_white_48.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_black_18.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_black_20.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_black_24.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_black_36.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_black_48.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_white_18.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_white_20.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_white_24.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_white_36.png" />
+        <AndroidResource Include="Resources\drawable-mdpi\outline_add_photo_alternate_white_48.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_black_18.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_black_20.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_black_24.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_black_36.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_black_48.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_white_18.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_white_20.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_white_24.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_white_36.png" />
+        <AndroidResource Include="Resources\drawable-xhdpi\outline_add_photo_alternate_white_48.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_black_18.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_black_20.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_black_24.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_black_36.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_black_48.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_white_18.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_white_20.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_white_24.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_white_36.png" />
+        <AndroidResource Include="Resources\drawable-xxhdpi\outline_add_photo_alternate_white_48.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_black_18.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_black_20.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_black_24.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_black_36.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_black_48.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_white_18.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_white_20.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_white_24.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_white_36.png" />
+        <AndroidResource Include="Resources\drawable-xxxhdpi\outline_add_photo_alternate_white_48.png" />
         <AndroidResource Include="Resources\drawable\background.png" />
+        <AndroidResource Include="Resources\drawable\change_photo_profile.png" />
         <AndroidResource Include="Resources\drawable\chat12x12.png" />
         <AndroidResource Include="Resources\drawable\chat24x24.png" />
         <AndroidResource Include="Resources\drawable\chat48x48.png" />
         <AndroidResource Include="Resources\drawable\fakeUser.png" />
         <AndroidResource Include="Resources\drawable\fakeUser1.jpg" />
         <AndroidResource Include="Resources\drawable\groups48x48.png" />
+        <AndroidResource Include="Resources\drawable\outline_add_photo_alternate_24.xml" />
+        <AndroidResource Include="Resources\drawable\outline_add_photo_alternate_black_24.xml" />
         <AndroidResource Include="Resources\layout\Tabbar.axml" />
         <AndroidResource Include="Resources\layout\Toolbar.axml" />
         <AndroidResource Include="Resources\values\colors.xml" />

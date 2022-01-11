@@ -24,6 +24,8 @@
         <!-- You can also set colorControlNormal, colorControlActivated
              colorControlHighlight and colorSwitchThumbNormal. -->
         <item name="android:windowActionModeOverlay">true</item>
+<!--        <item name="android:actionBarSize">200dp</item>-->
+        <item name="navigationMode">tabMode</item>
 
         <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
     </style>

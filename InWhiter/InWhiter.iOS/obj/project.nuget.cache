@@ -1,10 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "rWM2Jn3Evizxu+QaGAkIV0XtwG9uVQFSvR53zEMvzQxdXG5t6nVyqOAJEM//rGcz86i9nQoA6p4eseCgWRvkLw==",
+  "dgSpecHash": "MAG3AsTidLPSvWgclBlj3ItN1pxIL1qxZJEMvEHkK73o4LvfwB6BQcbBHJd8LrQDGZRwfvtohh9fHkVVOMCSVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\DON'T DELETE\\inventions\\C sharp\\MobileApps\\InWhiter\\InWhiter\\InWhiter.iOS\\InWhiter.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\dk.slidingpanel\\2.2.9\\dk.slidingpanel.2.2.9.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\reactiveui\\6.5.2\\reactiveui.6.5.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\reactiveui-core\\6.5.2\\reactiveui-core.6.5.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\rx-core\\2.2.5\\rx-core.2.2.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\rx-interfaces\\2.2.5\\rx-interfaces.2.2.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\rx-linq\\2.2.5\\rx-linq.2.2.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\rx-main\\2.2.5\\rx-main.2.2.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\rx-platformservices\\2.2.5\\rx-platformservices.2.2.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\splat\\1.4.0\\splat.1.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.communitytoolkit\\1.2.0\\xamarin.communitytoolkit.1.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.763-beta\\xamarin.forms.pancakeview.2.3.0.763-beta.nupkg.sha512"
   ],
   "logs": []
 }
